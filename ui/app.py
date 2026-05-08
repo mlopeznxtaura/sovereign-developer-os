@@ -1,0 +1,1 @@
+# BUILD NEXT — Tauri desktop app entry (Rust side handled separately)
