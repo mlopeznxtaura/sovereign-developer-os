@@ -1,0 +1,52 @@
+{
+  "node_id": "sovereign-dev-os-01",
+  "ollama": {
+    "base_url": "http://localhost:11434",
+    "model": "llama3",
+    "embed_model": "nomic-embed-text"
+  },
+  "chroma": {
+    "persist_dir": "~/.sovereign/chroma",
+    "collection": "codebase"
+  },
+  "rag": {
+    "chunk_size": 512,
+    "chunk_overlap": 64,
+    "top_k": 8
+  },
+  "agent": {
+    "max_steps": 10,
+    "temperature": 0.2
+  },
+  "finetune": {
+    "enabled": false,
+    "interval_hours": 24,
+    "min_accepted_suggestions": 50,
+    "output_dir": "~/.sovereign/finetuned"
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 8001
+  },
+  "telemetry": {
+    "prometheus_port": 9091,
+    "otlp_endpoint": "http://localhost:4317"
+  },
+  "workspace": {
+    "paths": [
+      "~/code"
+    ],
+    "extensions": [
+      ".py",
+      ".ts",
+      ".js",
+      ".go",
+      ".rs",
+      ".md",
+      ".json"
+    ]
+  },
+  "db": {
+    "path": "~/.sovereign/sovereign.db"
+  }
+}
