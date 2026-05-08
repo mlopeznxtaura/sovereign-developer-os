@@ -1,0 +1,29 @@
+# Sovereign Developer OS — Cluster 03
+# Inference
+ollama>=0.2.0
+llama-cpp-python>=0.2.0
+# RAG
+llama-index>=0.10.0
+llama-index-vector-stores-chroma>=0.1.0
+chromadb>=0.5.0
+# Agent
+langgraph>=0.1.0
+langchain>=0.2.0
+langchain-community>=0.2.0
+dspy-ai>=2.4.0
+instructor>=1.3.0
+# Fine-tuning (optional — GPU required)
+# axolotl
+# unsloth
+# API
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.0
+sqlalchemy>=2.0.0
+# Telemetry
+prometheus-client>=0.20.0
+opentelemetry-sdk>=1.24.0
+# Dev
+watchdog>=4.0.0
+gitpython>=3.1.0
+weights-and-biases>=0.17.0
